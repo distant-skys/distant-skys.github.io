@@ -16,26 +16,20 @@
   <meta name="description" content="">
   <meta name="author" content="Distant Skys">
   <meta name="keywords" content="">
-  <meta name="description" content="并查集 并查集是一种树形的数据结构，可以很高效的解决一些问题。 操作有三个操作：  初始化 查找 合并  初始化初始时，每个点都是自己的父亲。 123int fa[maxn];for(int i &#x3D; 1;i &lt;&#x3D; n;i ++)    fa[i] &#x3D; i; 查找 上图中，想要找 $5$ 的祖先，先通过 $2-5$ 这条边找到 $2$ ，通过同样的办法找到祖先 $1$，$1$ 没有祖先就得到答">
+  <meta name="description" content="Java 学习 Java 的基本模板： 12345678import java.util.*;import java.io.*;public class Main &amp;#123;    public static void main(String[] args)&amp;#123;        &#x2F;&#x2F; Do somethings;    &amp;#125;&amp;#125;  Java 的输入不是像 c++ 一样有简单">
 <meta property="og:type" content="article">
-<meta property="og:title" content="并查集">
-<meta property="og:url" content="http://distant-skys.github.io/2021/10/06/%E5%B9%B6%E6%9F%A5%E9%9B%86/index.html">
+<meta property="og:title" content="Java学习笔记">
+<meta property="og:url" content="http://distant-skys.github.io/2022/01/29/Java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="Distant-Skys">
-<meta property="og:description" content="并查集 并查集是一种树形的数据结构，可以很高效的解决一些问题。 操作有三个操作：  初始化 查找 合并  初始化初始时，每个点都是自己的父亲。 123int fa[maxn];for(int i &#x3D; 1;i &lt;&#x3D; n;i ++)    fa[i] &#x3D; i; 查找 上图中，想要找 $5$ 的祖先，先通过 $2-5$ 这条边找到 $2$ ，通过同样的办法找到祖先 $1$，$1$ 没有祖先就得到答">
+<meta property="og:description" content="Java 学习 Java 的基本模板： 12345678import java.util.*;import java.io.*;public class Main &amp;#123;    public static void main(String[] args)&amp;#123;        &#x2F;&#x2F; Do somethings;    &amp;#125;&amp;#125;  Java 的输入不是像 c++ 一样有简单">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://z3.ax1x.com/2021/10/06/4x2h9K.png">
-<meta property="og:image" content="https://z3.ax1x.com/2021/10/06/4xWYiq.png">
-<meta property="og:image" content="https://z3.ax1x.com/2021/10/06/4zwqgA.png">
-<meta property="og:image" content="https://z3.ax1x.com/2021/10/06/4z0LiF.png">
-<meta property="article:published_time" content="2021-10-06T12:32:28.000Z">
-<meta property="article:modified_time" content="2021-10-27T12:23:07.802Z">
+<meta property="article:published_time" content="2022-01-29T10:53:58.000Z">
+<meta property="article:modified_time" content="2022-01-29T10:59:22.934Z">
 <meta property="article:author" content="Distant Skys">
-<meta property="article:tag" content="数据结构">
-<meta property="article:tag" content="并查集">
+<meta property="article:tag" content="Java">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://z3.ax1x.com/2021/10/06/4x2h9K.png">
   
-  <title>并查集 - Distant-Skys</title>
+  <title>Java学习笔记 - Distant-Skys</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
 
@@ -177,12 +171,12 @@
 </nav>
 
     <div class="banner" id="banner" parallax=true
-         style="background: url('https://i.loli.net/2021/10/27/1ynG6uKxAjXSldU.jpg') no-repeat center center;
+         style="background: url('https://s2.loli.net/2022/01/29/FPse2vb5nmOijIE.jpg') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="并查集">
+            <span class="h2" id="subtitle" title="Java学习笔记">
               
             </span>
 
@@ -192,8 +186,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2021-10-06 20:32" pubdate>
-        2021年10月6日 晚上
+      <time datetime="2022-01-29 18:53" pubdate>
+        2022年1月29日 晚上
       </time>
     </span>
   
@@ -203,7 +197,7 @@
   
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      1.5k 字
+      487 字
     </span>
   
 
@@ -212,7 +206,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      5 分钟
+      2 分钟
     </span>
   
 
@@ -241,47 +235,24 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">并查集</h1>
+            <h1 style="display: none">Java学习笔记</h1>
             
             <div class="markdown-body">
-              <h1 id="并查集"><a href="#并查集" class="headerlink" title="并查集"></a>并查集</h1><p><img src="https://z3.ax1x.com/2021/10/06/4x2h9K.png" srcset="/img/loading.gif" lazyload alt="并查集"></p>
-<p>并查集是一种树形的数据结构，可以很高效的解决一些问题。</p>
-<h2 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h2><p>有三个操作：</p>
-<ul>
-<li>初始化</li>
-<li>查找</li>
-<li>合并</li>
+              <h1 id="Java-学习"><a href="#Java-学习" class="headerlink" title="Java 学习"></a>Java 学习</h1><ul>
+<li><p>Java 的<strong>基本</strong>模板：</p>
+<figure class="highlight java"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.*;<br><span class="hljs-keyword">import</span> java.io.*;<br><br><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>&#123;<br>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span></span>&#123;<br>        <span class="hljs-comment">// Do somethings;</span><br>    &#125;<br>&#125;<br></code></pre></div></td></tr></table></figure>
+</li>
+<li><p>Java 的输入不是像 c++ 一样有简单的函数，而是先要创建一个输入类：</p>
+<figure class="highlight java"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs java">Scanner cin = <span class="hljs-keyword">new</span> Scanner(System.in);<br></code></pre></div></td></tr></table></figure>
+<p>读入的话，可以使用其中的方法：</p>
+<figure class="highlight java"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs java">n = cin.next();<br><span class="hljs-comment">// 可以读到下一个空格之前</span><br>n = cin.nextLine();<br><span class="hljs-comment">// 可以读一整行</span><br></code></pre></div></td></tr></table></figure>
+<p><strong>注意</strong>：<code>cin.next()</code> 不能读带有空格的字符串，<code>cin.nextLine()</code> 可以读带有空格的字符串，也可以获得空白。</p>
+<p>当然，int 和 float 有 <code>nextInt()</code> \ <code>nextFloat()</code>。读入之前最好用 <code>hasNextInt()</code> \ <code>hasNextFloat()</code> 来验证。</p>
+</li>
+<li><p>Java 的输出较为简单：</p>
+<figure class="highlight java"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs java">System.out.println(n);    <span class="hljs-comment">// 输出完换行</span><br>System.out.print(n);    <span class="hljs-comment">// 输出完不换行</span><br></code></pre></div></td></tr></table></figure>
+</li>
 </ul>
-<h2 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h2><p>初始时，每个点都是自己的父亲。</p>
-<figure class="highlight cpp"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs cpp"><span class="hljs-keyword">int</span> fa[maxn];<br><span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>;i &lt;= n;i ++)<br>    fa[i] = i;<br></code></pre></div></td></tr></table></figure>
-<h3 id="查找"><a href="#查找" class="headerlink" title="查找"></a>查找</h3><p><img src="https://z3.ax1x.com/2021/10/06/4xWYiq.png" srcset="/img/loading.gif" lazyload alt=""></p>
-<p>上图中，想要找 $5$ 的祖先，先通过 $2-5$ 这条边找到 $2$ ，通过同样的办法找到祖先 $1$，$1$ 没有祖先就得到答案了。<br>就像上面一样递归找到每个点的祖先，在返回答案。</p>
-<p>代码如下：</p>
-<figure class="highlight cpp"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs cpp"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">find</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x)</span></span>&#123;<br>	<span class="hljs-keyword">if</span>(x == fa[x])		<span class="hljs-keyword">return</span> x;<br>    <span class="hljs-keyword">else</span>	<span class="hljs-keyword">return</span> <span class="hljs-built_in">find</span>(fa[x]);<br>&#125;<br></code></pre></div></td></tr></table></figure>
-<h3 id="合并"><a href="#合并" class="headerlink" title="合并"></a>合并</h3><p>显而易见，就是将两个集合合并。</p>
-<p><img src="https://z3.ax1x.com/2021/10/06/4zwqgA.png" srcset="/img/loading.gif" lazyload alt="union"></p>
-<p>挺简单的，就直接上代码吧：</p>
-<figure class="highlight cpp"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs cpp"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Union</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x,<span class="hljs-keyword">int</span> y)</span></span>&#123;<br>	<span class="hljs-keyword">int</span> u = <span class="hljs-built_in">find</span>(x),v = <span class="hljs-built_in">find</span>(v);<br>    fa[u] = v;<br>&#125;<br></code></pre></div></td></tr></table></figure>
-<p>设操作次数为 $m$，平均时间复杂度为 $\mathcal{O}(m \log n)$，最坏时间复杂度为 $\mathcal{O}(mn)$。</p>
-<h2 id="优化"><a href="#优化" class="headerlink" title="优化"></a>优化</h2><p>在上面的操作中还是不够快，所以我们想办法优化。</p>
-<h3 id="路径压缩"><a href="#路径压缩" class="headerlink" title="路径压缩"></a>路径压缩</h3><p>如果一个关系像一条链（如下图）一样，那么查找最下面的数的祖先的时间复杂度得退化到 $\mathcal{O}(n)$ 。</p>
-<p><img src="https://z3.ax1x.com/2021/10/06/4z0LiF.png" srcset="/img/loading.gif" lazyload alt="chain"></p>
-<p>这样一层一层找太浪费时间，直接当祖先的儿子，问一次就可以出结果了。甚至祖先是谁都无所谓，只要这个人可以代表我们家族就能得到想要的效果。<strong>把在路径上的每个节点都直接连接到根上</strong>。</p>
-<p><em>代码</em>：</p>
-<figure class="highlight cpp"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs cpp"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">find</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x)</span></span>&#123;<br>	<span class="hljs-keyword">return</span> fa[x] == x ? x : fa[x] = <span class="hljs-built_in">find</span>(fa[x]);<br>&#125;<br></code></pre></div></td></tr></table></figure>
-<h3 id="启发式合并"><a href="#启发式合并" class="headerlink" title="启发式合并"></a>启发式合并</h3><p>查找都优化了，那合并总不能不优化吧。</p>
-<p>我们思考一个问题：如果一个点与一个含有 $100$ 个点的集合合并，是一个点合并到 $100$ 个点的集合快？还是 $100$ 个点合并到一个点快？答案是显然的。<br>在题目中我们通常维护 点数 或 深度 来作为估价函数来合并</p>
-<figure class="highlight cpp"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs cpp"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Union</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x,<span class="hljs-keyword">int</span> y)</span></span>&#123;<br>	<span class="hljs-keyword">int</span> u = <span class="hljs-built_in">find</span>(x),v = <span class="hljs-built_in">find</span>(y);<br>    <span class="hljs-keyword">if</span>(u == v) <span class="hljs-keyword">return</span>;<br>    <span class="hljs-keyword">if</span>(sz[u] &gt; sz[v])<br>        <span class="hljs-built_in">swap</span>(u，v);<br>    fa[u] = v;<br>    sz[v] += sz[u];<br>&#125;<br></code></pre></div></td></tr></table></figure>
-<h3 id="优化后的时间复杂度"><a href="#优化后的时间复杂度" class="headerlink" title="优化后的时间复杂度"></a>优化后的时间复杂度</h3><ul>
-<li>只使用路径压缩的平均时间复杂度为 $\mathcal{O}(m \alpha(n))$，最坏时间复杂度为 $\mathcal{O}(m \log n)$</li>
-<li>只使用启发式合并的平均时间复杂度为 $\mathcal{O}(m \log n)$，最坏时间复杂度为 $\mathcal{O}(m \log n)$。</li>
-<li>路径压缩 + 启发式合并的平均时间复杂度为 $\mathcal{O}(m \alpha(n))$，最坏时间复杂度为 $\mathcal{O}(m \alpha(n))$。</li>
-</ul>
-<p>这里 $\alpha(n)$ 表示阿克曼函数的反函数增长很慢，可以认为是常数(<a target="_blank" rel="noopener" href="https://oi-wiki.org/ds/dsu/#_7">具体在这</a>)。</p>
-<h2 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h2><h3 id="带权并查集"><a href="#带权并查集" class="headerlink" title="带权并查集"></a>带权并查集</h3><p>我们可以在并查集上维护一些东西，比如元素和，元素个数。</p>
-<p>比如说<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/UVA11987">Almost Union-Find</a>这道题。它就是在并查集上维护一个元素和与元素个数，唯一不同的是这道题要一个虚点并查集，防止在第二个操作中下面的元素一起移动。</p>
-<p>核心代码：</p>
-<figure class="highlight cpp"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs cpp"><span class="hljs-comment">// 初始化</span><br><br><span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i=<span class="hljs-number">1</span>;i&lt;=n;i++)<br>	 fa[i] = n+i;<br>        <br><span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i=n+<span class="hljs-number">1</span>;i&lt;=n+n;i++)<br>	fa[i] = i,sz[i] = <span class="hljs-number">1</span>,sum[i] = i-n;<br><br><span class="hljs-comment">// 第二个操作，仅仅将一个节点移动到另一个集合上。</span><br><br><span class="hljs-keyword">int</span> u = <span class="hljs-built_in">find</span>(x),v = <span class="hljs-built_in">find</span>(y);<br><span class="hljs-keyword">if</span>(u != v)&#123;<br>	fa[x] = v;<br>	sz[u] --;sz[v] ++;<br>	sum[u] -= x;sum[v] += x;<br>&#125;<br></code></pre></div></td></tr></table></figure>
 
             </div>
             <hr>
@@ -291,7 +262,7 @@
                   <div class="post-meta mr-3">
                     <i class="iconfont icon-category"></i>
                     
-                      <a class="hover-with-bg" href="/categories/%E7%AE%97%E6%B3%95/">算法</a>
+                      <a class="hover-with-bg" href="/categories/Java/">Java</a>
                     
                   </div>
                 
@@ -299,9 +270,7 @@
                   <div class="post-meta">
                     <i class="iconfont icon-tags"></i>
                     
-                      <a class="hover-with-bg" href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">数据结构</a>
-                    
-                      <a class="hover-with-bg" href="/tags/%E5%B9%B6%E6%9F%A5%E9%9B%86/">并查集</a>
+                      <a class="hover-with-bg" href="/tags/Java/">Java</a>
                     
                   </div>
                 
@@ -318,18 +287,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2021/11/06/ATCoder-ABC-001/">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">ATCoder ABC 001</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2021/09/18/%E7%9F%A9%E9%98%B5/">
-                        <span class="hidden-mobile">矩阵</span>
+                      <a href="/2022/01/29/ABC235E-MST-1%E9%A2%98%E8%A7%A3/">
+                        <span class="hidden-mobile">ABC235E-MST+1题解</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>Java学习笔记</title>
+    <link href="/2022/01/29/Java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <url>/2022/01/29/Java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    
+    <content type="html"><![CDATA[<h1 id="Java-学习"><a href="#Java-学习" class="headerlink" title="Java 学习"></a>Java 学习</h1><ul><li><p>Java 的<strong>基本</strong>模板：</p><figure class="highlight java"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.*;<br><span class="hljs-keyword">import</span> java.io.*;<br><br><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>&#123;<br>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span></span>&#123;<br>        <span class="hljs-comment">// Do somethings;</span><br>    &#125;<br>&#125;<br></code></pre></div></td></tr></table></figure></li><li><p>Java 的输入不是像 c++ 一样有简单的函数，而是先要创建一个输入类：</p><figure class="highlight java"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs java">Scanner cin = <span class="hljs-keyword">new</span> Scanner(System.in);<br></code></pre></div></td></tr></table></figure><p>读入的话，可以使用其中的方法：</p><figure class="highlight java"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs java">n = cin.next();<br><span class="hljs-comment">// 可以读到下一个空格之前</span><br>n = cin.nextLine();<br><span class="hljs-comment">// 可以读一整行</span><br></code></pre></div></td></tr></table></figure><p><strong>注意</strong>：<code>cin.next()</code> 不能读带有空格的字符串，<code>cin.nextLine()</code> 可以读带有空格的字符串，也可以获得空白。</p><p>当然，int 和 float 有 <code>nextInt()</code> \ <code>nextFloat()</code>。读入之前最好用 <code>hasNextInt()</code> \ <code>hasNextFloat()</code> 来验证。</p></li><li><p>Java 的输出较为简单：</p><figure class="highlight java"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs java">System.out.println(n);    <span class="hljs-comment">// 输出完换行</span><br>System.out.print(n);    <span class="hljs-comment">// 输出完不换行</span><br></code></pre></div></td></tr></table></figure></li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>Java</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Java</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>ABC235E-MST+1题解</title>
     <link href="/2022/01/29/ABC235E-MST-1%E9%A2%98%E8%A7%A3/"/>
     <url>/2022/01/29/ABC235E-MST-1%E9%A2%98%E8%A7%A3/</url>
@@ -20,7 +45,11 @@
     
     <tags>
       
-      <tag>Atcoder - Kruskal - 最小生成树</tag>
+      <tag>Atcoder</tag>
+      
+      <tag>Kruskal</tag>
+      
+      <tag>最小生成树</tag>
       
     </tags>
     
@@ -76,9 +105,9 @@
     
     <tags>
       
-      <tag>并查集</tag>
-      
       <tag>数据结构</tag>
+      
+      <tag>并查集</tag>
       
     </tags>
     
@@ -385,13 +414,13 @@
     
     <tags>
       
-      <tag>题解</tag>
-      
-      <tag>图论</tag>
+      <tag>Kruskal</tag>
       
       <tag>最小生成树</tag>
       
-      <tag>Kruskal</tag>
+      <tag>题解</tag>
+      
+      <tag>图论</tag>
       
     </tags>
     
